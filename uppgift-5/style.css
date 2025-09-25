@@ -1,0 +1,105 @@
+/* Definiera hur du skulle skriva följande CSS Selector: */
+
+
+/* 1. Alla div-taggar = */
+
+div{
+    border: none;
+}
+
+/* 2. Första section-taggen inuti en article = */
+
+article section:first-of-type{
+    border: none;
+}
+
+/* 3. Alla li-taggar som inte har id “unique-list-element” = */
+
+li:not(#unique-list-element){
+    border: none;
+}
+
+/* 4. Första span inuti en section = */
+
+section span:first-of-type{
+    border: none;
+}
+
+/* 5. Alla li-taggar inuti en ul-tagg = */
+
+ul li{
+    border: none;
+}
+
+/* 6. Alla h1-taggar inuti en div med id=”main-header” = */
+
+div #main-header{
+    border: none;
+}
+
+/* 7. Alla buttons = */
+
+button{
+    border: none;
+}
+
+/* 8. Alla element med klassen “orange” = */
+
+.orange{
+    border: none;
+}
+
+/* 9. Alla element med id “box-id” = */
+
+#box-id{
+    border: none;
+}
+
+/* 10. Alla span-taggar med klassen “startpage-large-fonts”= */
+
+span .startpage-large-fonts{
+    border: none;
+}
+
+/* 11. Alla li-taggar med klassen “shop-item” inuti en div = */
+
+div li .shop-item{
+    border: none;
+}
+
+/* 12. Alla h2-taggar och alla h3-taggar = */
+
+h2, h3{
+    border: none;
+}
+
+/* 13. Alla h2-taggar med klassen “section-heading” inuti en span med id “article-3” = */
+
+span #article-3 h2 .section-heading{
+    border: none;
+}
+
+/* 14. Vid hover på en a-tagg = */
+
+a:hover{
+    border: none;
+}
+
+/* 15. Sista li-taggen inuti ul med klassen “clothing-list” = */
+
+ul .clothing-list li:last-child{
+    border: none;
+}
+
+/* 16. Alla checkboxar = */
+
+input[type=checkbox]{
+    border: none;
+}
+
+/* 17. Alla radiobuttons med värdet “all” = */
+
+input[type="radio"][value="all"]{
+    border: none;
+}
+
