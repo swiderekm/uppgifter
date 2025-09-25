@@ -48,12 +48,22 @@ h1{
 }
 
 label, a{
-    padding: 0px 5px 0px 0px;
+    padding-right: 5px;
     font-size: small;
     display: flex;
     align-items: center;
     text-decoration: none;
     color: white;
+}
+
+p{
+    margin: 0px;
+    padding-right: 5px;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;   
 }
 
 a:hover{
