@@ -151,4 +151,29 @@ footer{
     .break{
         height: 100px;
     }
+
+    body{
+        background-image: none;
+        background-color: #e3e3e3;
+    }
+
+    h1{
+        color: black;
+    }
+
+    label, a{
+        color: black;
+    }
+
+    .break{
+        color: black;
+    }
+
+    #login-btn{
+        background-color: crimson;
+    }
+
+    footer{
+        align-items: center;
+    }
 }
