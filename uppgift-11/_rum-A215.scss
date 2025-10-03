@@ -1,0 +1,32 @@
+.container-a215{
+    height: calc(100vh - 20px);
+    @include flex-container (column, space-evenly, flex-end);
+    background-color: $color-1;
+}
+
+.bord-215 {
+    @include flex-container (row, space-evenly, center);
+    height: calc(100vh - 150px);
+    width: 100vw;
+}
+
+.row-1-215, .row-2-215, .row-3-215 {
+    @include flex-container (column, flex-start, center);
+    height: 500px;
+    width: 300px;
+}
+
+.table-1-215 {
+    @include table-wide;
+    margin: 15px;
+}
+
+.table-2-215 {
+    @include table-normal;
+    margin: 25px;
+}
+
+.table-3-215 {
+    @include table-round;
+    margin: 25px;
+}

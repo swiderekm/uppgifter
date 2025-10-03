@@ -1,0 +1,24 @@
+#container-index {
+    height: 100vh;
+    @include flex-container(row, center, center);
+    color: $fontcolor1;
+    text-decoration: none;
+}
+
+.door{
+    @include flex-container(column, flex-start, center);
+    background-color: $doorcolor;
+    height: 150px;
+    width: 100px;
+    margin: 25px;
+    color: $fontcolor1;
+    padding-top: 15px;
+    text-decoration: none;
+    color: $fontcolor1;
+    text-decoration: none;
+}
+
+.door:hover {
+    background-color: $door-color-hover;
+    cursor: pointer;
+}

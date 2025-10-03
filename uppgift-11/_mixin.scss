@@ -1,0 +1,32 @@
+@mixin flex-container ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin table-normal {
+    width: 150px;
+    height: 100px;
+    background-color: $doorcolor;
+}
+
+@mixin table-wide {
+    width: 350px;
+    height: 100px;
+    background-color: $doorcolor;
+}
+
+@mixin table-round {
+    width: 200px;
+    height: 200px;
+    background-color: $doorcolor;
+    border-radius: 100px;
+}
+
+@mixin table-crazy {
+    width: 300px;
+    height: 200px;
+    background-color: $doorcolor;
+    border-radius: 10px;
+}

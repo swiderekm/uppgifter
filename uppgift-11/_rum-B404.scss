@@ -1,0 +1,33 @@
+.container-b404{
+    height: calc(100vh - 20px);
+    @include flex-container (column, space-evenly, flex-end);
+    background-color: $color-3;
+}
+
+.bord-404 {
+    @include flex-container (row, space-evenly, center);
+    height: calc(100vh - 100px);
+    width: 100vw;
+}
+
+.row-1-404:first-child {
+    @include flex-container (row, flex-start, center);
+    height: 500px;
+    width: 300px;
+}
+
+.row-2-404, .row-3-404 {
+    @include flex-container (column, flex-start, center);
+    height: 500px;
+    width: 300px;
+}
+
+.table-1-404 {
+    @include table-round;
+    margin: 15px;
+}
+
+.table-2-404 {
+    @include table-wide;
+    margin: 15px;
+}

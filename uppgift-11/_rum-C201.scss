@@ -1,0 +1,34 @@
+.back-button {
+    text-decoration: none;
+    color: $fontcolor2;
+    margin: 25px;
+}
+
+.container-c201{
+    height: calc(100vh - 20px);
+    @include flex-container (column, space-evenly, flex-end);
+    background-color: $color-2;
+}
+
+.bord {
+    @include flex-container (row, space-evenly, flex-end);
+    width: 100vw;
+}
+
+#table-1 {
+    @include table-wide;
+    margin: 15px;
+}
+
+.row-1, .row-2 {
+    @include flex-container (column, flex-start, center);
+    height: 500px;
+    width: 300px;
+}
+
+.tavla {
+    background-color: black;
+    height: 100px;
+    width: 500px;
+
+}

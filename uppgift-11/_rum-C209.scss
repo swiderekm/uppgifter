@@ -1,0 +1,22 @@
+.container-c209{
+    height: calc(100vh - 20px);
+    @include flex-container (column, space-evenly, flex-end);
+    background-color: $color-3;
+}
+
+.bord-209 {
+    @include flex-container (row, space-evenly, center);
+    height: calc(100vh - 170px);
+    width: 100vw;
+}
+
+.row-1-209 {
+    @include flex-container (column, flex-start, center);
+    height: 500px;
+    width: 300px;
+}
+
+.table-1-209 {
+    @include table-wide;
+    margin: 25px;
+}

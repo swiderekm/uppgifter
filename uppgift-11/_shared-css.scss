@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(219, 219, 219);
+}
+
+.invi-container-1 {
+    @include flex-container (row, center, flex-start);
+    height: 150px;
+    width: 100vw;
+}
+

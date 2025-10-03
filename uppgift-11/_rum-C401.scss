@@ -1,0 +1,34 @@
+.container-c401{
+    height: calc(100vh - 20px);
+    @include flex-container (column, space-evenly, flex-end);
+    background-color: $color-1;
+}
+
+.bord-401 {
+    @include flex-container (row, space-evenly, center);
+    height: calc(100vh - 150px);
+    width: 100vw;
+}
+
+.invi-container-2 {
+    @include flex-container (row, flex-end, flex-end);
+    height: 150px;
+    width: 100vw;
+}
+
+.row-1-401 {
+    @include flex-container (column, space-between, center);
+    height: 500px;
+    width: 300px;
+}
+
+.row-2-401 {
+    @include flex-container (column, flex-end, flex-end);
+    height: 500px;
+    width: 300px;
+}
+
+.table-1-401 {
+    @include table-crazy;
+    margin: 15px;
+}
