@@ -1,7 +1,7 @@
 .container-b404{
     height: calc(100vh - 20px);
     @include flex-container (column, space-evenly, flex-end);
-    background-color: $color-3;
+    background-color: $color-1;
 }
 
 .bord-404 {
