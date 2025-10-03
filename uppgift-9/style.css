@@ -154,7 +154,7 @@ footer{
 
     body{
         background-image: none;
-        background-color: #e3e3e3;
+        background-color: #f6ecec;
     }
 
     h1{
@@ -167,6 +167,7 @@ footer{
 
     .break{
         color: black;
+        height: 3.5rem;
     }
 
     #login-btn{
