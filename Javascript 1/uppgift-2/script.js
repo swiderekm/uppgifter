@@ -45,14 +45,20 @@ document.getElementById("ageToDaysBTN").addEventListener("click", function () {
 })
 
 // Task 4 
-let height = 15;
-let base = 8;
+// let height = 15;
+// let base = 8;
 
-function triangleArea () {
-    console.log(base *  height / 2);
-};
+// function triangleArea () {
+//     console.log(base *  height / 2);
+// };
 
-triangleArea();
+// triangleArea();
+
+function triangleArea2 (base, height) {
+    console.log(base * height / 2, "cm2")
+}
+
+triangleArea2(8, 15);
 
 // Task 5
 function daysToMinutes (days) {
@@ -108,7 +114,7 @@ document.getElementById("ChickLegsBTN").addEventListener("click", function () {
 
 // Task 11
 function greaterThanHundred (number1, number2) {
-    if (number1 + number2 < 100) {
+    if (number1 + number2 <= 100) {
         return true;
     }
     else {
@@ -116,5 +122,5 @@ function greaterThanHundred (number1, number2) {
     }
 };
 
-console.log(greaterThanHundred(49, 50));
+console.log(greaterThanHundred(51, 50));
 
