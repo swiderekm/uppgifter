@@ -43,7 +43,7 @@ let names = ['Johansson', 'Gustavsson', 'Fiutek'];
 let lastNames = names.map((name => name.charAt(0)));
 
 console.log(lastNames);
-
+// pusta linijka
 // Task 5.2
 let names2 = ['Johansson', 'Gustavsson', 'Fiutek', 'Anon'];
 
