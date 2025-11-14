@@ -17,34 +17,33 @@ document.getElementById('colorChange').addEventListener('click', function() {
 
 // 4
 let allP = document.querySelectorAll('p');
-document.getElementById('colorChangeP').addEventListener('click', function () {
+document.querySelector('#colorChangeP').addEventListener('click', function () {
     allP.forEach((allP) => {
-        allP.style.color = 'green';
+        allP.style.color = 'red';
     })
 })
 
 //Uppgift 2
-// 1
 let numArr = [2, 5, 10, 15, 20, 25, 30, 50, 60, 92];
 
 let ul = document.createElement('ul');
 
-numArr.forEach(num => {
+bodyTag.append(ul);
+
+numArr.forEach((num, i) => {
     let li = document.createElement('li');
     li.className = 'numbers';
     li.textContent = num;
-    ul.appendChild(li);
-})
+    ul.append(li);
 
-bodyTag.appendChild(ul);
-
-// 2
-let liItems = document.querySelectorAll('li');
-numArr.forEach((num, i) => {
-    if (num % 2 === 0) {
-        liItems[i].style.color = 'red';
+    if ((i + 1) % 5 === 0) {
+        li.style.color = 'purple';
+    } else if (num % 2 === 0) {
+        li.style.color = 'red';
+    } else {
+        li.style.color = 'blue';
     }
-});
+})
 
 //Uppgift 3
 // 1
@@ -75,28 +74,27 @@ let objectArr = [
     }
 ];
 
-let button = document.getElementById('get-profiles');
-document.getElementById('get-profiles').addEventListener('click', () => {
+document.querySelector('#get-profiles').addEventListener('click', () => {
     let container = document.querySelector('.profile-cards');
+    container.innerHTML = '';
     objectArr.forEach(item => {
         let profileCard = document.createElement('div');
         profileCard.className = 'card';
         profileCard.innerHTML = 
         `<h3>${item.name}</h3> 
-        <p>age: ${item.age}</p>
-        <p>pets: ${item.amountOfPets}</p>
-        <p>email: ${item.email}</p>
-        <p>fav author: ${item.favoriteAuthor}</p>`
+        <p><strong>age:</strong> ${item.age}</p>
+        <p><strong>pets:</strong> ${item.amountOfPets}</p>
+        <p><strong>email:</strong> ${item.email}</p>
+        <p><strong>fav author:</strong> ${item.favoriteAuthor}</p>`
 
-        if (item.lovesWinter === true) {
+        if (item.lovesWinter) {
             profileCard.style.background = 'lightblue';
         } else {
             profileCard.style.background = '#F65E0A';
         }
 
-        container.appendChild(profileCard);
+        container.append(profileCard);
 
-        button.style.display = 'none';
     })
 })
 
