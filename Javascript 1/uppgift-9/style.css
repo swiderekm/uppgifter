@@ -1,0 +1,26 @@
+.background {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.background:hover {
+    box-shadow: 0 0 5px black;
+    transition: 0.2s;
+}
+
+.deleteBtn {
+    margin-right: 25px;
+}
+
+.deleteBtn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px black;
+    scale: 1.1;
+    transition: 0.2s;
+}
+
+#list:hover {
+    cursor:default;
+    transition: 0.2s;
+}
