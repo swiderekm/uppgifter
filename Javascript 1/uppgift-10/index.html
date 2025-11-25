@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppgift 10</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="text" placeholder="Name" id="name-input">
+    <select name="city" id="city-select">
+        <option>Stockholm</option>
+        <option>Malmö</option>
+        <option>Göteborg</option>
+        <option>Lund</option>
+    </select>
+    <div class="class-container">
+        <label>
+            <input checked type="radio" name="class" value="frontend-utvecklare" id="fu-class">
+            Frontend-utvecklare
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="class" value="Backend-utvecklare" id="bu-class">
+            Backend-utvecklare
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="class" value="Design" id="de-class">
+            Design
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="class" value="Nurse" id="nu-class">
+            Nurse
+        </label>
+    </div>
+    <br>
+    <div class="year-container">
+        <label>
+            <input checked type="radio" name="year" value="1" id="year-one">
+            år 1
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="year" value="2" id="year-two">
+            år 2
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="year" value="3" id="year-three">
+            år 3
+        </label>
+    </div>
+    <br>
+    <button id="validate">ADD</button>
+    <div class="output"></div>
+</body>
+</html>

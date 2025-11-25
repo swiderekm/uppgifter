@@ -1,0 +1,13 @@
+.deleteBtn {
+    margin-right: 12px;
+    margin-left: 5px;
+}
+
+.li {
+    border-bottom: 0.5px solid black;
+    padding-bottom: 15px;
+}
+
+.output {
+    margin-top: 5px;
+}
