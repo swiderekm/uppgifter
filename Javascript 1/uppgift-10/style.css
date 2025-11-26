@@ -11,3 +11,55 @@
 .output {
     margin-top: 5px;
 }
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    background-color: greenyellow;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+button:hover {
+    box-shadow: 0 0 2px black;
+    transition: 0.3s;
+    scale: 1.1;
+}
+
+#city-select {
+    background-color: lightblue;
+    border: 1px solid #a1a1fb;
+    border-radius: 5px;
+}
+
+#name-input {
+    background-color: lightblue;
+    border: 1px solid #a1a1fb;
+    border-radius: 5px;
+    color: black; 
+}
+
+#name-input::placeholder {
+    color: #0000005e;
+}
+
+.output {
+    border-top: 0.5px solid black
+}
+
+h3 {
+    margin: 5px;
+}
+
+.checkboxes {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 0px 10px;
+}
+
+.containerCheck {
+    display: flex;
+}

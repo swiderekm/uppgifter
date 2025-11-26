@@ -9,52 +9,92 @@
 </head>
 <body>
     <input type="text" placeholder="Name" id="name-input">
-    <select name="city" id="city-select">
+        <select name="city" id="city-select">
         <option>Stockholm</option>
         <option>Malmö</option>
         <option>Göteborg</option>
-        <option>Lund</option>
     </select>
-    <div class="class-container">
-        <label>
-            <input checked type="radio" name="class" value="frontend-utvecklare" id="fu-class">
-            Frontend-utvecklare
-        </label>
+    <div class="radio-container">
+        <div class="class-container">
+            <h3>Program</h3>
+            <label>
+                <input checked type="radio" name="class" value="Frontend-utvecklare" id="fu-class">
+                Frontend-utvecklare
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="class" value="Backend-utvecklare" id="bu-class">
+                Backend-utvecklare
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="class" value="Fullstack-utvecklare" id="de-class">
+                Fullstack-utvecklare
+            </label>
+
+        </div>
         <br>
-        <label>
-            <input type="radio" name="class" value="Backend-utvecklare" id="bu-class">
-            Backend-utvecklare
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="class" value="Design" id="de-class">
-            Design
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="class" value="Nurse" id="nu-class">
-            Nurse
-        </label>
-    </div>
-    <br>
-    <div class="year-container">
-        <label>
-            <input checked type="radio" name="year" value="1" id="year-one">
-            år 1
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="year" value="2" id="year-two">
-            år 2
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="year" value="3" id="year-three">
-            år 3
-        </label>
+        <div class="year-container">
+            <h3>Årskurs</h3>
+            <label>
+                <input checked type="radio" name="year" value="1" id="year-one">
+                år 1
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="year" value="2" id="year-two">
+                år 2
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="year" value="3" id="year-three">
+                år 3
+            </label>
+        </div>
     </div>
     <br>
     <button id="validate">ADD</button>
+    <br>
+    <br>
+    <div class="containerCheck">
+        <div class="checkboxes" id="cityGroup">
+            <h3>Stad</h3>
+            <label>
+                <input type="checkbox"> Stockholm
+            </label>
+            <label>
+                <input type="checkbox"> Malmö
+            </label>
+            <label>
+                <input type="checkbox"> Göteborg
+            </label>
+        </div>
+        <div class="checkboxes" id="programGroup">
+            <h3>Program</h3>
+            <label>
+                <input type="checkbox"> Frontend-utvecklare
+            </label>
+            <label>
+                <input type="checkbox"> Backend-utvecklare
+            </label>
+            <label>
+                <input type="checkbox"> Fullstack-utvecklare
+            </label>
+        </div>
+        <div class="checkboxes" id="yearGroup">
+            <h3>Årskurs</h3>
+            <label>
+                <input type="checkbox"> Årskurs 1
+            </label>
+            <label>
+                <input type="checkbox"> Årskurs 2
+            </label>
+            <label>
+                <input type="checkbox"> Årskurs 3
+            </label>
+        </div>
+    </div>
+    <button id="filterBtn">filter</button>
     <div class="output"></div>
 </body>
 </html>
